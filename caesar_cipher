@@ -1,49 +1,10 @@
-import string
-2
-3
-4
-def caesar_encrypt (message, key):
-5
-shift - key % 26
-6
-cipher = str-maketrans(string-ascii_lowercase, string-ascii_lowercase[shift:] + string-ascii_lowercase[:shift])
-7
-8
-encrypted_message = message. lower () translate(cipher)
-9
-10
-return encrypted
-_message
-11
-12
-13
-def caesar_decrypt (encrypted
-message, key):
-14
-15
-16
-shift = 26 - (key % 26)
-cipher = str-maketrans(string-ascii_lowercase, string-ascii_lowercase[shift:] + string-ascii_lowercase[:shift])
-17
-18
-19
-message = encrypted
-_message. translate(cipher)
-return message
-20
-21
-22
-message = 'Subscribe To W J Pearce'
-key = 3
-23
-24
-25
-encrypted_message = caesar_encrypt (message, key)
-print(f'Encrypted message: (encrypted message) ')
-26
-27
-28
-decrypted
-message = caesar.
-_decrypt (encrypted message, key)
-printf'Decrypted message: (decrypted message) 'D
+def whois_lookup(domain: str):
+5 = socket.socket(socket.AF_INET,
+socket.SOCK_STREAM)
+s. connect(("whois.iana.org", 43))
+5. send (f"'(domain) \r\n*
+- encode())
+response
+5. recv (4096) - decode()
+s. close()
+return
